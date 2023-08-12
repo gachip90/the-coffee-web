@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: "Inconsolata", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.header {
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    height: 55px;
+    background-color: #000;
+    position: fixed;
+    display: flex;
+    padding: 8px 16px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-item {
+    width: 25%;
+}
+
+.nav-item-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 16px;
+    justify-content: center;
+}
+
+.nav-item-link:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.header {
+    position: relative;
+}
+
+.header-img {
+    background-image: url(/assets/img/coffeehouse.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    filter: grayscale(50%);
+    height: 722px;
+    width: 100%;
+}
+
+
+.header-content {
+    position: absolute;
+    width: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-content span {
+    color: #fff;
+    font-size: 90px;
+}
+
+.header-info-left {
+    position: absolute;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    padding: 12px 24px;
+}
+
+.header-info-left span {
+    background-color: #000;
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.header-info-right {
+    position: absolute;
+    color: #fff;
+    right: 0;
+    bottom: 0;
+    padding: 12px 24px;
+}
+
+.content {
+    height: 2000px;
+}
+
+.container {
+    overflow: hidden;
+    background-color: #f7f5f2;
+}
+
+.about {
+    max-width: 700px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.about p {
+    margin: 18px 0;
+    text-shadow: 0 0 1px rgb(0 0 0 / 10%)
+}
+
+.about-heading {
+    text-align: center;
+    padding: 64px 0;
+    float: left;
+    width: 100%;
+}
+
+.about-heading span {
+    font-size: 18px;
+    padding: 0 8px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 4px;
+    display: inline-block;
+}
+
+.about-quote {
+    margin: 16px 0;
+    padding: 0.18px 16px;
+    background-color: #f1f1f1;
+    border-left: 6px solid #ccc;
+}   
+
+.about-img{
+    margin-top: 16px;
+    margin-bottom: -8px;
+    width: 100%;
+    filter: grayscale(75%);
+}
+
+.about-info {
+
+}
+
+.menu {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.menu-heading {
+    text-align: center;
+    padding: 48px 0;
+    float: left;
+    width: 100%;
+}
+
+.menu-heading span {
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 4px;
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.tab {
+    display: flex;
+    padding: 8px 16px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.tab-item {
+    width: 50%;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+}
+
+.tab-item.active {
+    background-color: #616161;
+    color: #fff;
+}
+
+.tab-content {
+    padding: 48px 16px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane h5 {
+    font-size: 18px;
+}
+
+.tab-pane p {
+    font-size: 18px;
+    color: #757575;
+    margin: 18px 0;
+}
+
+.menu-img {
+    width: 100%;
+    margin-top: 32px;
+    filter: grayscale(75%);
+}
+
+.where {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.where p {
+    margin: 18px 0;
+    font-size: 18px;
+}
+
+.where p span {
+    padding: 0 8px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+}
+
+.where-heading {
+   padding: 48px 0;
+   text-align: center;
+   float: left;
+   width: 100%;
+}
+
+.where-heading span {
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 4px;
+    padding: 0 8px;
+    display: inline-block;
+}
+.where-img {
+    width: 100%;
+    filter: grayscale(75%);
+}
+
+.where-form {
+    margin-bottom: 32px;
+}
+
+.where-form p input {
+    display: block;
+    padding: 16px 8px;
+    width: 100%;
+    font-size: 18px;
+    font-family: "Inconsolata", sans-serif;
+    line-height: 27px;
+    border: 1px solid #ccc;
+}
+
+.where-form p button {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    border: none;
+    cursor: pointer;
+}
+
+.where-form p button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 48px 0;
+    background-color: #f1f1f1;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 18px;
+    margin: 18px 0;
+}
+
+.footer p a {
+    color: #000;
+}
+
+
+
+
+
